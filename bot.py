@@ -90,7 +90,7 @@ if farmType == 'Empowers' :
 	empowersSnipeLayout = [ [sg.Text('Make sure to have the bazaar open, as shown in the picture below',font='helvetica 20')],
 							[sg.Image(r'./Buying-Assets/Example.png')],
 							[sg.Button('Start',font='helvetica 20')],
-							[sg.Text('To stop the bot, close this window or hold K while refreshing and a bit after', font='helvetica 20')]
+							[sg.Text('To stop the bot, close this window or hold K while refreshing and a bit after', font='helvetica 18')]
 						]
 	empowersSnipe = sg.Window('wizard101 Bazaar-Snipe-Bot', empowersSnipeLayout, size = (850, 800), element_justification='c')
 	event, values = empowersSnipe.read()
