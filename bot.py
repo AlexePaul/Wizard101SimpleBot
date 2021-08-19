@@ -143,12 +143,12 @@ if farmType == 'Empowers' :
 if farmType == 'Fights' :
 	fightingLayout = [	[sg.Text('Make sure you have max mana before starting the bot!',font='helvetica 20')],
 						[sg.Text('before the first time use, refer to the "read me" file',font='helvetica 20')],
+						[sg.Text('To stop the bot, close this window or hold K when the \ncharacter switches from going forward to going backwards', font='helvetica 18')],
 						[sg.Text('Mana:',font='helvetica 20'), sg.InputText(size=(73,0))],
 						[sg.Text('Mana cost of the spell:',font='helvetica 20'), sg.InputText()],
-						[sg.Submit('Start', font='helvetica 20')],
-						[sg.Text('To stop the bot, close this window or hold K when the character switches from going forward to going backwards', font='helvetica 20')]
+						[sg.Submit('Start', font='helvetica 20')]
 					]
-	fighting = sg.Window('wizard101 Fight-Farming Bot', fightingLayout, size = (700, 250))
+	fighting = sg.Window('wizard101 Fight-Farming Bot', fightingLayout, size = (700, 350))
 	event, values = fighting.read()
 	maxSpellCount = int(int(values[0])/int(values[1]))
 	counter=0
